@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.carousel-container {
+    position: relative;
+    width: 900px;
+    height: 420px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #f9fafc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card .name {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card .meta {
+    font-size: 12px;
+    color: #555;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+    background: #0b2a4a;
+    color: white;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.nav.left {
+    left: 10px;
+}
+
+.nav.right {
+    right: 10px;
+}
+
+.top-header{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 10px 16px;
+    background: #0b2a4a;
+    color: white;
+    border-radius: 10px;
+}
+
+.top-header .logo{
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.top-header .title{
+    font-size: 16px;
+    opacity: 0.9;
+}
+.top-header {
+    margin-top: 20px;
+}
+.carousel-container {
+    margin-top: 10px;
+}
+.carousel-viewport {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 60px;   /* space for left arrow */
+    padding-right: 60px;  /* space for right arrow */
+    box-sizing: border-box;
+}
